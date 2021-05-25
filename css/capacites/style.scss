@@ -1,0 +1,189 @@
+
+@import '../menu' ;
+@import '../footer' ;
+
+/**************************** SECTION 1 ****************************/     
+        #directeur{
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 50px;
+            article{
+                width: 45%;
+                font-family: 'Noto Sans JP';
+                display: flex;
+                flex-direction: column;
+                h3{
+                    align-self: flex-end;
+                }
+            }
+            img{
+                height: 300px;
+            }
+               
+            @media only screen and (max-width: 375px){
+                flex-direction: column;
+                width: 80%;
+                article{
+                    width: 100%;
+                    font-size: 10pt;
+                }
+                img{
+                    width: 100%;
+                    height: fit-content;
+                }
+            } 
+        }   
+/**************************** SECTION 2 ****************************/     
+        #capacites{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0 50px 0;
+            font-family: 'Noto Sans JP';
+            
+            @media only screen and (max-width: 375px){
+                h2{
+                    font-size: 13pt;
+                }
+            } 
+            #description{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .engins{
+                    width: 20%;
+                    list-style: none;
+                    li{
+                        margin: 3px;
+                        height: 50px;
+                        font-weight: bold;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .vert{
+                        background-color: darkgreen;
+                        color: white;
+                    }
+                    .jaune{
+                        background-color: yellow;
+                    }
+                    #long{
+                        height: 60px;
+                    }
+
+                    @media only screen and (max-width: 375px){
+                        display: none;
+                    } 
+                }
+                #images{
+                    width: 40%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    padding-top: 50px;
+                    img{
+                        width: 40%;
+                        padding-bottom: 15px;
+                        cursor: zoom-in;
+                        transition: 0.3s;
+                    }
+                    img:hover{
+                        opacity: 0.7;
+                    }
+                    @media only screen and (max-width: 375px){
+                        width: 90%;
+                        margin: 0 auto;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        img{
+                            width: 100%;
+                        }
+                    } 
+                }
+                #engins_responsive{
+                    display: none;
+                }
+                @media only screen and (max-width: 375px){
+                    flex-direction: column;
+                    #engins_responsive{
+                        width: 100%;
+                        display: block;
+                        background-color: darkgreen;
+                        color: white;
+
+                        #engins_menu{
+                            width: 80%;
+                            margin: 0 auto;
+                            padding: 0;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: 12pt;
+                            font-weight: bold;
+                            #less{
+                                display: none;
+                            }
+                        }
+                        #engins_liste{
+                            margin: 0;
+                            list-style: none;
+                            padding: 0;
+                            display: none;
+                            li{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                color: white;
+                                height: 50px;
+                            }
+                            .jaune{
+                                background-color: yellow;
+                                color: black;
+                            }
+                            #long{
+                                height: 60px;
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+/**************************** MODAL ****************************/         
+        .zoom_img{
+            cursor: zoom-out;
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+            img{
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 1000px;
+            }
+            .zoomed_img {
+                animation-name: zoom;
+                animation-duration: 0.6s;
+              }
+              
+              @keyframes zoom {
+                from {transform:scale(0)}
+                to {transform:scale(1)}
+              }
+        }

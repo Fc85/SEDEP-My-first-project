@@ -1,0 +1,100 @@
+/**************************** STYLE GENERAL ****************************/
+html{
+    overflow-x: hidden;
+
+    body{
+        margin: 0;
+        padding: 0;
+
+/**************************** HEADER ****************************/
+        header{
+            padding: 0;
+
+            @media only screen and (max-width: 375px){/*Style nav responsive*/
+                padding: 15px;
+            } 
+
+/**************************** NAV ****************************/
+            nav{
+                margin: 0 auto;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+
+                img{
+                    height: 80px;
+                }
+
+                @media only screen and (max-width: 375px){/*Style nav responsive*/
+                    flex-wrap: wrap;
+                    img{
+                        height: 60px;
+                    }
+                } 
+                
+                /* ICON BURGER*/
+                #burger{
+                    display: none;    
+                    @media only screen and (max-width: 375px){/*Style de l'icon responsive*/
+                        display: block;
+                        font-size: 18pt;
+                    } 
+                }
+                
+                /*ICON CROIX*/
+                #close{
+                    display: none;    
+                    @media only screen and (max-width: 375px){/*Style de l'icon responsive*/
+                        display: none;
+                        font-size: 18pt;
+                    } 
+                }
+
+                /*LISTE DES BOUTONS*/
+                #nav_liste{
+                    width: 80%;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    li{
+                        a{
+                            font-family: "Noto Sans JP";
+                            font-weight: 700;
+                            font-size: 14pt;
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 375px){/*Style nav responsive*/
+                        display: none;
+                        width: 100%;
+                        flex-direction: column;
+                        text-align: center;
+                        padding: 25px 0 0 0;
+                        margin: 0;
+                        font-size: 12pt;
+                        li{
+                            padding-block: 5px;
+                        }
+                    }     
+                }
+            }
+        }
+        hr{
+            margin: 0;
+            padding: 0;
+            border: none;
+            height: 4px;
+        }
+        #ligne_header_verte{
+            background-color: darkgreen;
+        }
+        #ligne_header_jaune{
+            background-color: yellow;
+        }
+    }
+}  

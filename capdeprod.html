@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <!--Responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import de la feuille de style-->
+        <link rel="stylesheet" href="./css/capacites/style.css"/>
+        <!--Choix du favicon-->
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <!--Titre de l'onglet-->
+        <title>SEDEP </title>
+        <!--Import de la police d'écriture-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--Import de font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <!--Import des script js-->
+        <script type="text/javascript" src="./js/script.js"></script>
+        
+    </head>
+
+    <!-- Au chargement de la page, execution de la fonction showSlides afin d'afficher la première image-->
+    <body>
+
+        <header>
+            
+            <!--Navigateur-->
+            <nav id="nav">
+                
+                <!--Logo-->
+                <img src="images/LOGO.png" alt="Logo du site" />
+                
+                <!--Icon menu burger qui appelle la fonction afficherMenu()-->
+                <i id="burger" class="fas fa-bars fa-3x" onclick="afficherMenu()"></i>
+                
+                <!--Icon croix qui appelle la fonction cacherMenu()-->
+                <i id="close" class="fas fa-times fa-3x" onclick="cacherMenu()"></i>
+                
+                <!--Liste des boutons du nav-->
+                <ul id="nav_liste">
+                    <li><a href="./index.html">Entreprise</a></li>
+                    <li><a href="./capdeprod.html">Capacités de Production</a></li>
+                    <li><a href="./realisations.html">Réalisations</a></li>
+                    <li><a href="">Sécurité/Formation/Réglementation</a></li>
+                    <li><a href="">Accès interne</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Emploi</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <!--Ligne séparatrices-->
+        <hr id="ligne_header_verte">
+        <hr id="ligne_header_jaune">
+
+        <!--Première section-->
+        <section id="directeur">
+            <article>
+                <p>“J'ai la responsabilité de l'achat des machines et de l'optimisation du matériel. Pour une autonomie complète dans l'entretien du parc, nous disposons de notre propre atelier avec cinq mécaniciens permanents au siège de la société”.</p>
+                <h3>Jean-Claude Logeais, directeur matériel</h3>
+            </article>
+            <img src="images/capacites/portrait.jpg" alt="Image du directeur" />
+        </section>
+
+        <!--Deuxième section contenant les capacités de production-->
+        <section id="capacites">
+            
+            <h2>Un parc machines récent et fréquemment renouvelé, pour tous types de travaux :</h2>
+            <div id="description"> <!--Première liste (gauche)-->
+                <ul class="engins">
+                    <li class="vert">2 bulldozers</li>
+                    <li class="jaune">1 pelle 30 tonnes avec brise roches hydraulique</li>
+                    <li class="vert">8 pelles 21 tonnes à chenilles</li>
+                    <li class="jaune">2 pelles à pneus 14 tonnes</li>
+                    <li class="vert">1 pelle à pneus 8 tonnes</li>
+                    <li class="jaune">4 pelles à chenilles 8 tonnes</li>
+                    <li class="vert">11 mini-pelles de 2,5 tonnes à 5 tonnes</li>
+                    <li class="jaune">1 finisseur</li>
+                    <li class="vert">13 chargeuses et élévateurs</li>
+                    <li class="jaune">2 niveleuses</li>
+                </ul>
+                <div id="images"> <!--Images centrales-->
+                    <img src="./images/capacites/img1.jpg" alt="image d'engin 1"  onclick="zoomIn('zoom_img1')"/>
+                    <img src="./images/capacites/img2.jpg" alt="image d'engin 2"  onclick="zoomIn('zoom_img2')"/>
+                    <img src="./images/capacites/img3.jpg" alt="image d'engin 3"  onclick="zoomIn('zoom_img3')"/>
+                    <img src="./images/capacites/img4.jpg" alt="image d'engin 4"  onclick="zoomIn('zoom_img4')"/>
+                    <img src="./images/capacites/img5.jpg" alt="image d'engin 5"  onclick="zoomIn('zoom_img5')"/>
+                    <img src="./images/capacites/img6.jpg" alt="image d'engin 6"  onclick="zoomIn('zoom_img6')"/>
+                </div>
+                <ul class="engins"> <!--Deuxième liste (droite)-->
+                    <li class="vert">2 tracteurs agricoles avec benne ou balayeuse</li>
+                    <li class="jaune">1 Dumper</li>
+                    <li class="vert">6 compacteurs</li>
+                    <li class="jaune">7 petits compacteurs</li>
+                    <li class="vert">4 semi-remorques</li>
+                    <li class="jaune">8 camions 8x4 et 6x4</li>
+                    <li class="vert">1 répandeuse</li>
+                    <li class="jaune">1 point à temps automatique</li>
+                    <li id="long" class="vert">une quarantaine de véhicules : fourgons, fourgonnettes, utilitaires...</li>
+                </ul>
+
+                <!--Responsive Menu-->
+                <div id="engins_responsive">
+                    
+                    <div id="engins_menu">
+                        <p>Les différents véhicules</p>
+                                            
+                        <!--Icon menu responsive qui appelle la fonction afficherMenu()-->
+                        <i id="more" class="fas fa-plus" onclick="afficherEngins()"></i>
+                        
+                        <!--Icon menu responsive qui appelle la fonction cacherMenu()-->
+                        <i id="less" class="fas fa-minus" onclick="cacherEngins()"></i>    
+                    </div>
+
+                    <!--Liste des engins, version responsive-->
+                    <ul id="engins_liste">
+                        <li class="jaune">2 bulldozers</li>
+                        <li>1 pelle 30 tonnes avec brise roches hydraulique</li>
+                        <li class="jaune">8 pelles 21 tonnes à chenilles</li>
+                        <li>2 pelles à pneus 14 tonnes</li>
+                        <li class="jaune">1 pelle à pneus 8 tonnes</li>
+                        <li>4 pelles à chenilles 8 tonnes</li>
+                        <li class="jaune">11 mini-pelles de 2,5 tonnes à 5 tonnes</li>
+                        <li>1 finisseur</li>
+                        <li class="jaune">13 chargeuses et élévateurs</li>
+                        <li>2 niveleuses</li>
+                        <li class="jaune">2 tracteurs agricoles avec benne ou balayeuse</li>
+                        <li>1 Dumper</li>
+                        <li class="jaune">6 compacteurs</li>
+                        <li>7 petits compacteurs</li>
+                        <li class="jaune">4 semi-remorques</li>
+                        <li>8 camions 8x4 et 6x4</li>
+                        <li class="jaune">1 répandeuse</li>
+                        <li>1 point à temps automatique</li>
+                        <li id="long" class="jaune">une quarantaine de véhicules : fourgons, fourgonnettes, utilitaires...</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- MODAL -->
+        <div id="zoom_img1" class="zoom_img" onclick="zoomOut('zoom_img1')">
+                
+            <!--Image zoomée-->
+            <img class="zoomed_img" src="./images/capacites/img1.jpg" alt="image 1 zoom">
+                    
+        </div>
+        <div id="zoom_img2" class="zoom_img" onclick="zoomOut('zoom_img2')">
+                
+            <!--Image zoomée-->
+            <img class="zoomed_img" src="./images/capacites/img2.jpg" alt="image 2 zoom">
+                    
+        </div>
+        <div id="zoom_img3" class="zoom_img" onclick="zoomOut('zoom_img3')">
+                
+            <!--Image zoomée-->
+            <img class="zoomed_img" src="./images/capacites/img3.jpg" alt="image 3 zoom">
+                    
+        </div>
+        <div id="zoom_img4" class="zoom_img" onclick="zoomOut('zoom_img4')">
+                
+            <!--Image zoomée-->
+            <img class="zoomed_img" src="./images/capacites/img4.jpg" alt="image 4 zoom">
+                    
+        </div>
+        <div id="zoom_img5" class="zoom_img" onclick="zoomOut('zoom_img5')">
+                
+            <!--Image zoomée-->
+            <img class="zoomed_img" src="./images/capacites/img5.jpg" alt="image 5 zoom">
+                    
+        </div>
+        <div id="zoom_img6" class="zoom_img" onclick="zoomOut('zoom_img6')">
+                
+            <!--Image zoomée-->
+            <img class="zoomed_img" src="./images/capacites/img6.jpg" alt="image 6 zoom">
+                    
+        </div>
+
+        <!--Footer de la page-->
+        <footer>
+            <p>©2011-2021 - Mentions légales - Agence de communication B17 à Nantes</p>
+        </footer>
+
+    </body>
+
+</html>

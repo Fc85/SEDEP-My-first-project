@@ -1,0 +1,288 @@
+/**************************** STYLE GENERAL ****************************/
+html {
+  overflow-x: hidden;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  /**************************** HEADER ****************************/
+}
+
+html body header {
+  padding: 0;
+  /**************************** NAV ****************************/
+}
+
+@media only screen and (max-width: 375px) {
+  html body header {
+    /*Style nav responsive*/
+    padding: 15px;
+  }
+}
+
+html body header nav {
+  margin: 0 auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  /* ICON BURGER*/
+  /*ICON CROIX*/
+  /*LISTE DES BOUTONS*/
+}
+
+html body header nav img {
+  height: 80px;
+}
+
+@media only screen and (max-width: 375px) {
+  html body header nav {
+    /*Style nav responsive*/
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html body header nav img {
+    height: 60px;
+  }
+}
+
+html body header nav #burger {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  html body header nav #burger {
+    /*Style de l'icon responsive*/
+    display: block;
+    font-size: 18pt;
+  }
+}
+
+html body header nav #close {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  html body header nav #close {
+    /*Style de l'icon responsive*/
+    display: none;
+    font-size: 18pt;
+  }
+}
+
+html body header nav #nav_liste {
+  width: 80%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body header nav #nav_liste li a {
+  font-family: "Noto Sans JP";
+  font-weight: 700;
+  font-size: 14pt;
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 375px) {
+  html body header nav #nav_liste {
+    /*Style nav responsive*/
+    display: none;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 25px 0 0 0;
+    margin: 0;
+    font-size: 12pt;
+  }
+  html body header nav #nav_liste li {
+    padding-block: 5px;
+  }
+}
+
+html body hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 4px;
+}
+
+html body #ligne_header_verte {
+  background-color: darkgreen;
+}
+
+html body #ligne_header_jaune {
+  background-color: yellow;
+}
+
+/**************************** FOOTER ****************************/
+footer {
+  background-color: black;
+  color: darkgreen;
+  font-family: 'Noto Sans JP';
+  font-weight: 500;
+  font-size: 10pt;
+  text-align: center;
+  padding: 5px;
+}
+
+/**************************** IMAGES ****************************/
+#images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#images #images_terrassement, #images #images_voirie, #images #images_revetement, #images #images_soutenement {
+  width: 35%;
+  padding: 25px;
+}
+
+#images #images_terrassement h2, #images #images_voirie h2, #images #images_revetement h2, #images #images_soutenement h2 {
+  font-family: 'Noto Sans JP';
+  text-align: center;
+}
+
+#images #images_terrassement .slider, #images #images_voirie .slider, #images #images_revetement .slider, #images #images_soutenement .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#images #images_terrassement .slider .terrassement, #images #images_terrassement .slider .voirie, #images #images_terrassement .slider .revetement, #images #images_terrassement .slider .soutenement, #images #images_voirie .slider .terrassement, #images #images_voirie .slider .voirie, #images #images_voirie .slider .revetement, #images #images_voirie .slider .soutenement, #images #images_revetement .slider .terrassement, #images #images_revetement .slider .voirie, #images #images_revetement .slider .revetement, #images #images_revetement .slider .soutenement, #images #images_soutenement .slider .terrassement, #images #images_soutenement .slider .voirie, #images #images_soutenement .slider .revetement, #images #images_soutenement .slider .soutenement {
+  display: none;
+}
+
+#images #images_terrassement .slider .terrassement img, #images #images_terrassement .slider .voirie img, #images #images_terrassement .slider .revetement img, #images #images_terrassement .slider .soutenement img, #images #images_voirie .slider .terrassement img, #images #images_voirie .slider .voirie img, #images #images_voirie .slider .revetement img, #images #images_voirie .slider .soutenement img, #images #images_revetement .slider .terrassement img, #images #images_revetement .slider .voirie img, #images #images_revetement .slider .revetement img, #images #images_revetement .slider .soutenement img, #images #images_soutenement .slider .terrassement img, #images #images_soutenement .slider .voirie img, #images #images_soutenement .slider .revetement img, #images #images_soutenement .slider .soutenement img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 375px) {
+  #images #images_terrassement .slider .terrassement img, #images #images_terrassement .slider .voirie img, #images #images_terrassement .slider .revetement img, #images #images_terrassement .slider .soutenement img, #images #images_voirie .slider .terrassement img, #images #images_voirie .slider .voirie img, #images #images_voirie .slider .revetement img, #images #images_voirie .slider .soutenement img, #images #images_revetement .slider .terrassement img, #images #images_revetement .slider .voirie img, #images #images_revetement .slider .revetement img, #images #images_revetement .slider .soutenement img, #images #images_soutenement .slider .terrassement img, #images #images_soutenement .slider .voirie img, #images #images_soutenement .slider .revetement img, #images #images_soutenement .slider .soutenement img {
+    /*Style responsive*/
+    height: 250px;
+  }
+}
+
+#images #images_terrassement .slider .anim, #images #images_voirie .slider .anim, #images #images_revetement .slider .anim, #images #images_soutenement .slider .anim {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#images #images_terrassement .slider .precedent, #images #images_terrassement .slider .suivant, #images #images_voirie .slider .precedent, #images #images_voirie .slider .suivant, #images #images_revetement .slider .precedent, #images #images_revetement .slider .suivant, #images #images_soutenement .slider .precedent, #images #images_soutenement .slider .suivant {
+  cursor: pointer;
+  padding: 16px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 3px 0 0 3px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#images #images_terrassement .slider .suivant, #images #images_voirie .slider .suivant, #images #images_revetement .slider .suivant, #images #images_soutenement .slider .suivant {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+#images #images_terrassement .slider .precedent:hover, #images #images_terrassement .slider .suivant:hover, #images #images_voirie .slider .precedent:hover, #images #images_voirie .slider .suivant:hover, #images #images_revetement .slider .precedent:hover, #images #images_revetement .slider .suivant:hover, #images #images_soutenement .slider .precedent:hover, #images #images_soutenement .slider .suivant:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#images #images_terrassement #cercle_div, #images #images_voirie #cercle_div, #images #images_revetement #cercle_div, #images #images_soutenement #cercle_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+}
+
+#images #images_terrassement #cercle_div .cercle_terrassement, #images #images_terrassement #cercle_div .cercle_voirie, #images #images_terrassement #cercle_div .cercle_revetement, #images #images_terrassement #cercle_div .cercle_soutenement, #images #images_voirie #cercle_div .cercle_terrassement, #images #images_voirie #cercle_div .cercle_voirie, #images #images_voirie #cercle_div .cercle_revetement, #images #images_voirie #cercle_div .cercle_soutenement, #images #images_revetement #cercle_div .cercle_terrassement, #images #images_revetement #cercle_div .cercle_voirie, #images #images_revetement #cercle_div .cercle_revetement, #images #images_revetement #cercle_div .cercle_soutenement, #images #images_soutenement #cercle_div .cercle_terrassement, #images #images_soutenement #cercle_div .cercle_voirie, #images #images_soutenement #cercle_div .cercle_revetement, #images #images_soutenement #cercle_div .cercle_soutenement {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+#images #images_terrassement #cercle_div .active, #images #images_terrassement #cercle_div .cercle_terrassement:hover, #images #images_terrassement #cercle_div .cercle_voirie:hover, #images #images_terrassement #cercle_div .cercle_revetement:hover, #images #images_terrassement #cercle_div .cercle_soutenement:hover, #images #images_voirie #cercle_div .active, #images #images_voirie #cercle_div .cercle_terrassement:hover, #images #images_voirie #cercle_div .cercle_voirie:hover, #images #images_voirie #cercle_div .cercle_revetement:hover, #images #images_voirie #cercle_div .cercle_soutenement:hover, #images #images_revetement #cercle_div .active, #images #images_revetement #cercle_div .cercle_terrassement:hover, #images #images_revetement #cercle_div .cercle_voirie:hover, #images #images_revetement #cercle_div .cercle_revetement:hover, #images #images_revetement #cercle_div .cercle_soutenement:hover, #images #images_soutenement #cercle_div .active, #images #images_soutenement #cercle_div .cercle_terrassement:hover, #images #images_soutenement #cercle_div .cercle_voirie:hover, #images #images_soutenement #cercle_div .cercle_revetement:hover, #images #images_soutenement #cercle_div .cercle_soutenement:hover {
+  background-color: #717171;
+}
+
+@media only screen and (max-width: 375px) {
+  #images {
+    /*Style nav responsive*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  #images #images_terrassement, #images #images_voirie, #images #images_revetement, #images #images_soutenement {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

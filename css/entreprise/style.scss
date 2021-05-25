@@ -1,0 +1,154 @@
+
+@import '../menu' ;
+@import '../footer' ;
+
+/**************************** BANNIERE ****************************/        
+        #banniere{
+            background-image: url("../../images/entreprise/banniere.jpg");
+            width: 100%;
+            height: 600px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-family: "Noto Sans JP";
+            font-size: 20pt;
+            margin-bottom: 75px;    
+            @media only screen and (max-width: 375px){
+                background-position: center;
+                text-align: center;
+                font-size: 14pt;
+                height: 400px;
+            } 
+        }
+
+/**************************** DEUXIEME SECTION ****************************/
+        #section_deux{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: 0 auto;
+            justify-content: space-evenly;
+            font-family: 'Noto Sans JP';
+            #un, #trois{
+                width: 40%;
+                padding-bottom: 75px;
+            }
+            #deux{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 75px;
+                img{
+                    height: 100px;
+                    padding-left: 100px;
+                }
+            }
+                
+            @media only screen and (max-width: 375px){
+                width: 90%;
+                #un, #trois{
+                    width: 100%;
+                }
+                #deux{
+                    img{
+                        display: none;
+                    }
+                }
+            } 
+        }
+
+/**************************** SEPARATION ****************************/
+        #separation{
+            color: darkgreen;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-bottom: 75px;
+            hr{
+                width: 30%;
+                border: none;
+                background-color: darkgreen;
+                height: 4px;
+            }
+                
+            @media only screen and (max-width: 375px){
+                hr{
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 25px;
+                }
+            } 
+        }
+
+/**************************** EQUIPE ****************************/
+        #equipe{
+            font-family: 'Noto Sans JP';
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            div{
+                padding-bottom: 75px;
+            }
+            #title{
+                text-align: center;
+                width: 70%;
+                margin: 0 auto;
+                h2{
+                    font-size: 23pt;
+                }
+            }
+            #franck, #nelly, #delphine{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    width: 50%;
+                    font-weight: 400;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        color: darkgreen;
+                    }
+                }    
+            }             
+            @media only screen and (max-width: 375px){
+                width: 100%;
+                div{
+                    padding-bottom: 25px;
+                }
+                #title{
+                    width: 80%;
+                    p{
+                        width: 100%;
+                    }
+                }
+                #franck, #delphine{
+                    flex-direction: column;
+                    p{
+                        width: 80%;
+                        text-align: center;
+                    }
+                    div{
+                        font-size: 10pt;
+                    }
+                }
+                #nelly{
+                    flex-direction: column-reverse;
+                    p{
+                        width: 80%;
+                        text-align: center;
+                    }
+                    div{
+                        font-size: 10pt;
+                    }
+                }
+            }
+        }

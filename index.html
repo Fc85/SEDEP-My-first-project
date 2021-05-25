@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <!--Responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import de la feuille de style-->
+        <link rel="stylesheet" href="./css/entreprise/style.css"/>
+        <!--Choix du favicon-->
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <!--Titre de l'onglet-->
+        <title>SEDEP </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--Import de font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <!--Import des script js-->
+        <script type="text/javascript" src="./js/script.js"></script>
+        
+    </head>
+
+    <!-- Au chargement de la page, execution de la fonction showSlides afin d'afficher la première image-->
+    <body>
+
+        <header>
+            
+            <!--Navigateur-->
+            <nav id="nav">
+                
+                <!--Logo-->
+                <img src="images/LOGO.png" alt="Logo du site" />
+                
+                <!--Icon menu burger qui appelle la fonction afficherMenu()-->
+                <i id="burger" class="fas fa-bars fa-3x" onclick="afficherMenu()"></i>
+                
+                <!--Icon croix qui appelle la fonction cacherMenu()-->
+                <i id="close" class="fas fa-times fa-3x" onclick="cacherMenu()"></i>
+                
+                <!--Liste des boutons du nav-->
+                <ul id="nav_liste">
+                    <li><a href="./index.html">Entreprise</a></li>
+                    <li><a href="./capdeprod.html">Capacités de Production</a></li>
+                    <li><a href="./realisations.html">Réalisations</a></li>
+                    <li><a href="">Sécurité/Formation/Réglementation</a></li>
+                    <li><a href="">Accès interne</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Emploi</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <!--Ligne séparatrices-->
+        <hr id="ligne_header_verte">
+        <hr id="ligne_header_jaune">
+
+        <!--Première section contenant la bannière-->
+        <section id="banniere">
+            <h1>SEDEP, MULTI-ACTIVITÉS DE TRAVAUX PUBLICS</h1>
+        </section>
+
+        <!--Deuxième section contenant les différents text-->
+        <section id="section_deux">
+            <!--Premier article-->
+            <article id="un">
+                <h2>La Société Des Entreprises Perrocheau (SEDEP)</h2>
+                <p>Multi-activités, SEDEP prend en charge tous travaux de réalisation de terrassement, d'assainissement, d'adduction d’eau potable, de réseaux souples, de voirie. Nous intervenons pour la réalisation d'aménagements urbains, de lotissements publics et privés, d’hôtellerie de plein air et de sites industriels et commerciaux.</p>
+            </article>
+            
+            <!--Div contenant un article et l'image-->
+            <div id="deux">
+                <img src="./images/entreprise/perrocheau.gif" alt="Vieille pancarte de l'entreprise"/>
+                <article>
+                    <h2>SEDEP exploite en outre sa propre carrière :</h2>
+                    <p>350 000 tonnes de matériaux par an sur une superficie de 29 ha.</p>
+                </article>
+            </div>
+
+            <!--3eme article-->
+            <article id="trois">
+                <h2>Historique et chiffres clés</h2>
+                <p>Entreprise de travaux agricoles créée après guerre par Athanase Perrocheau, Charles Perrocheau, son fils, oriente rapidement son activité vers les travaux publics et le remembrement. En 1971, la société SEDEP est créée et compte alors une vingtaine de collaborateurs, puis une quarantaine en 1973. En 1994, Olivier Perrocheau reprend la société familiale, qui connaît une montée en puissance pour atteindre un effectif de 83 collaborateurs fin 2008.
+                    En janvier 2009, le groupe Nivet, basé à Saumur, rachète la société SEDEP.
+                    En 2010, SEDEP réalise un chiffre d'affaires de 13 millions d'euros.</p>
+            </article>
+
+        </section>
+
+        <!--Section contenant les icones et les séparateurs-->
+        <section id="separation">
+
+            <i class="fas fa-truck-moving fa-3x"></i>
+            <hr>
+            <i class="fas fa-snowplow fa-3x"></i>
+            <hr>
+            <i class="fas fa-truck-pickup fa-3x"></i>
+
+        </section>
+
+        <!--Section Equipe-->
+        <section id="equipe">
+            <!--Div contenant le titre et le sous titre de la section-->
+            <div id="title">
+                <h2>Équipe</h2>
+                <p>L'organisation des travaux s'effectue sous la responsabilité d'un directeur de travaux qui coordonne l'activité de quatre conducteurs de travaux et 16 chefs d'équipes.</p>
+            </div>
+
+            <!--Div contenant le premier membre de l'équipe-->
+            <div id="franck">
+                <p>“Directeur des travaux, je réalise le premier rendez-vous avec le client. Après étude de la faisabilité de son projet, j'établis le chiffrage de l'opération. La commande enregistrée, je gère le plan de charge travaux de l'entreprise, effectue le suivi en relation avec les conducteurs de travaux et assure la réception du chantier, une fois celui-ci terminé”.</p>
+                <div>
+                    <i class="fas fa-wrench fa-3x"></i>
+                    <h3>Franck Loubet, directeur des travaux</h3>
+                </div>
+            </div>
+
+            <!--Div contenant le second membre de l'équipe-->
+            <div id="nelly">
+                <div>
+                    <i class="fas fa-check fa-3x"></i>
+                    <h3>Nelly Bernard, responsable QSE</h3>
+                </div>
+                <p>“Ma mission pour l'activité Travaux Publics est très axée sécurité : veille réglementaire, application des procédures et des consignes de sécurité, vérification de la conformité du matériel. Sur un plan plus humain, je suis chargée de l'accueil des salariés, intérimaires et stagiaires, de la gestion du plan de formation et de l'animation du CHSCT (Comité d'hygiène, de sécurité et des conditions de travail)”.</p>
+            </div>
+
+            <!--Div contenant le troisieme membre de l'équipe-->
+            <div id="delphine">
+                <p>“Avec Olivier Lucas, dessinateur métreur, je suis chargée de la partie topographie des chantiers de Travaux Publics : relevés sur le terrain, élaboration de plans, métrés, implantations sur sites. Une fois les travaux effectués, nous réalisons le plan de recollement”</p>
+                <div>
+                    <i class="fas fa-ruler fa-3x"></i>
+                    <h3>Delphine Ferrière, géomètre</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Footer de la page-->
+        <footer>
+            <p>©2011-2021 - Mentions légales - Agence de communication B17 à Nantes</p>
+        </footer>
+
+    </body>
+
+</html>

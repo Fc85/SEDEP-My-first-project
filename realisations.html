@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <!--Responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import de la feuille de style-->
+        <link rel="stylesheet" href="./css/realisations/style.css"/>
+        <!--Choix du favicon-->
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <!--Titre de l'onglet-->
+        <title>SEDEP </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--Import de font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <!--Import des script js-->
+        <script type="text/javascript" src="./js/script.js"></script>
+        
+    </head>
+
+    <!-- Au chargement de la page, execution de la fonction showSlides afin d'afficher la première image-->
+    <body onload="initSlider()">
+
+        <header>
+            
+            <!--Navigateur-->
+            <nav id="nav">
+                
+                <!--Logo-->
+                <img src="images/LOGO.png" alt="Logo du site" />
+                
+                <!--Icon menu burger qui appelle la fonction afficherMenu()-->
+                <i id="burger" class="fas fa-bars fa-3x" onclick="afficherMenu()"></i>
+                
+                <!--Icon croix qui appelle la fonction cacherMenu()-->
+                <i id="close" class="fas fa-times fa-3x" onclick="cacherMenu()"></i>
+                
+                <!--Liste des boutons du nav-->
+                <ul id="nav_liste">
+                    <li><a href="./index.html">Entreprise</a></li>
+                    <li><a href="./capdeprod.html">Capacités de Production</a></li>
+                    <li><a href="">Réalisations</a></li>
+                    <li><a href="">Sécurité/Formation/Réglementation</a></li>
+                    <li><a href="">Accès interne</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Emploi</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <!--Ligne séparatrices-->
+        <hr id="ligne_header_verte">
+        <hr id="ligne_header_jaune">
+
+
+
+        <!--Section des carrousel-->
+        <section id="images">
+
+            <!--Terrassement-->
+            <div id="images_terrassement">
+
+                <h2>Terrassement</h2>
+
+                <!-- Container des slide -->
+                <div class="slider">
+
+                    <!-- Bouton précédent (Unicode)-->
+                    <a class="precedent" onclick="plusSlides(-1, 'terrassement', 'cercle_terrassement')">&#10094;</a>
+
+                    <!-- Images du slider -->
+                    <div class="terrassement anim">
+                        <img src="./images/realisations/terrassement1.jpg">
+                    </div>
+                
+                    <div class="terrassement anim">
+                        <img src="./images/realisations/terrassement2.jpg">
+                    </div>
+                
+                    <div class="terrassement anim">
+                        <img src="./images/realisations/terrassement3.jpg">
+                    </div>
+                
+                    <div class="terrassement anim">
+                        <img src="./images/realisations/terrassement4.jpg">
+                    </div>
+                
+                    <!-- Bouton suivant (Unicode)-->
+                    <a class="suivant" onclick="plusSlides(1, 'terrassement', 'cercle_terrassement')">&#10095;</a>
+                </div>
+                
+                <!-- Cercles d'images -->
+                <div id="cercle_div">
+                    <span class="cercle_terrassement" onclick="currentSlide(1)"></span>
+                    <span class="cercle_terrassement" onclick="currentSlide(2)"></span>
+                    <span class="cercle_terrassement" onclick="currentSlide(3)"></span>
+                    <span class="cercle_terrassement" onclick="currentSlide(4)"></span>
+                </div>
+
+            </div>
+            
+            <!--Voirie-->
+            <div id="images_voirie">
+
+                <h2>Voirie</h2>
+
+                <!-- Container des slide -->
+                <div class="slider">
+
+                    <!-- Bouton précédent (Unicode)-->
+                    <a class="precedent" onclick="plusSlides(-1, 'voirie', 'cercle_voirie')">&#10094;</a>
+
+                    <!-- Images du slider -->
+                    <div class="voirie anim">
+                        <img src="./images/realisations/voirie1.jpg">
+                    </div>
+                
+                    <div class="voirie anim">
+                        <img src="./images/realisations/voirie2.jpg">
+                    </div>
+                
+                    <!-- Bouton suivant (Unicode)-->
+                    <a class="suivant" onclick="plusSlides(1, 'voirie', 'cercle_voirie')">&#10095;</a>
+                </div>
+                
+                <!-- Cercles d'images -->
+                <div id="cercle_div">
+                    <span class="cercle_voirie" onclick="currentSlide(1)"></span>
+                    <span class="cercle_voirie" onclick="currentSlide(2)"></span>
+                </div>
+
+            </div>
+
+            
+            <!--Revetement-->
+            <div id="images_revetement">
+
+                <h2>Revetement</h2>
+
+                <!-- Container des slide -->
+                <div class="slider">
+
+                    <!-- Bouton précédent (Unicode)-->
+                    <a class="precedent" onclick="plusSlides(-1, 'revetement', 'cercle_revetement')">&#10094;</a>
+
+                    <!-- Images du slider -->
+                    <div class="revetement anim">
+                        <img src="./images/realisations/revetement1.jpg">
+                    </div>
+                
+                    <div class="revetement anim">
+                        <img src="./images/realisations/revetement2.jpg">
+                    </div>
+                
+                    <div class="revetement anim">
+                        <img src="./images/realisations/revetement3.jpg">
+                    </div>
+                
+                    <div class="revetement anim">
+                        <img src="./images/realisations/revetement4.jpg">
+                    </div>
+                
+                    <div class="revetement anim">
+                        <img src="./images/realisations/revetement5.jpg">
+                    </div>
+                
+                    <div class="revetement anim">
+                        <img src="./images/realisations/revetement6.jpg">
+                    </div>
+                
+                    <!-- Bouton suivant (Unicode)-->
+                    <a class="suivant" onclick="plusSlides(1, 'revetement', 'cercle_revetement')">&#10095;</a>
+                </div>
+                
+                <!-- Cercles d'images -->
+                <div id="cercle_div">
+                    <span class="cercle_revetement" onclick="currentSlide(1)"></span>
+                    <span class="cercle_revetement" onclick="currentSlide(2)"></span>
+                    <span class="cercle_revetement" onclick="currentSlide(3)"></span>
+                    <span class="cercle_revetement" onclick="currentSlide(4)"></span>
+                    <span class="cercle_revetement" onclick="currentSlide(5)"></span>
+                    <span class="cercle_revetement" onclick="currentSlide(6)"></span>
+                </div>
+
+            </div>
+                      
+            <!--Soutenement-->
+            <div id="images_soutenement">
+
+                <h2>Soutenement</h2>
+
+                <!-- Container des slide -->
+                <div class="slider">
+
+                    <!-- Bouton précédent (Unicode)-->
+                    <a class="precedent" onclick="plusSlides(-1, 'soutenement', 'cercle_soutenement')">&#10094;</a>
+
+                    <!-- Images du slider -->
+                    <div class="soutenement anim">
+                        <img src="./images/realisations/soutenement1.jpg">
+                    </div>
+                
+                    <!-- Bouton suivant (Unicode)-->
+                    <a class="suivant" onclick="plusSlides(1, 'soutenement', 'cercle_soutenement')">&#10095;</a>
+                </div>
+                
+                <!-- Cercles d'images -->
+                <div id="cercle_div">
+                    <span class="cercle_soutenement" onclick="currentSlide(1)"></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Footer de la page-->
+        <footer>
+            <p>©2011-2021 - Mentions légales - Agence de communication B17 à Nantes</p>
+        </footer>
+
+    </body>
+
+</html>

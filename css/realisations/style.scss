@@ -1,0 +1,91 @@
+
+@import '../menu' ;
+@import '../footer' ;
+
+/**************************** IMAGES ****************************/
+        #images{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            #images_terrassement, #images_voirie, #images_revetement, #images_soutenement{
+                width: 35%;
+                padding: 25px;
+                h2{
+                    font-family: 'Noto Sans JP';
+                    text-align: center;
+                }
+                .slider{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .terrassement, .voirie, .revetement, .soutenement{
+                        display: none;
+                        img{
+                            width: 100%;
+                            @media only screen and (max-width: 375px){/*Style responsive*/
+                                height: 250px;
+                            } 
+                        }
+                    }
+                    .anim {
+                        -webkit-animation-name: fade;
+                        -webkit-animation-duration: 1.5s;
+                        animation-name: fade;
+                        animation-duration: 1.5s;
+                    }
+                    
+                    @-webkit-keyframes fade {
+                        from {opacity: .4}
+                        to {opacity: 1}
+                    }
+                    
+                    @keyframes fade {
+                        from {opacity: .4}
+                        to {opacity: 1}
+                    }
+                    .precedent, .suivant{
+                        cursor: pointer;
+                        padding: 16px;
+                        color: grey;
+                        font-weight: bold;
+                        font-size: 18px;
+                        border-radius: 3px 0 0 3px;
+                        transition: 0.6s ease;
+                        user-select: none;
+                    }
+                    .suivant{
+                        right: 0;
+                        border-radius: 0 3px 3px 0;
+                    }
+                    .precedent:hover, .suivant:hover {
+                        background-color: rgba(0,0,0,0.8);
+                    }
+                }
+                #cercle_div{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 10px;
+                    .cercle_terrassement, .cercle_voirie, .cercle_revetement, .cercle_soutenement {
+                        cursor: pointer;
+                        height: 15px;
+                        width: 15px;
+                        margin: 0 2px;
+                        background-color: #bbb;
+                        border-radius: 50%;
+                        transition: background-color 0.6s ease;
+                    }
+                    .active, .cercle_terrassement:hover, .cercle_voirie:hover, .cercle_revetement:hover, .cercle_soutenement:hover {
+                        background-color: #717171;
+                    }
+                }   
+            }
+            
+            @media only screen and (max-width: 375px){/*Style nav responsive*/
+                flex-direction: column;
+                flex-wrap: nowrap;
+                #images_terrassement, #images_voirie, #images_revetement, #images_soutenement{
+                    width: 100%;
+                }
+            }         
+        }
